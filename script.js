@@ -22,5 +22,9 @@ while(!itens.includes('sair')){
   itens.push(entrada.toLowerCase())
 };
 
-
+leia.close()
+itens.pop();
+itens.sort()
+console.log("\nLista encerrada com sucesso!\n")
+itens.forEach(itens => console.log(chalk.red(itens)));
 
