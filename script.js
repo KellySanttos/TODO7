@@ -9,5 +9,13 @@ const leia = readline.createInterface({
   output: process.stdout,
 });
 
+function perguntar(pergunta) {
+  return new Promise((resolve, reject) => {
+      leia.question(pergunta,(entrada) => {
+        resolve(entrada)
+      })
+  })
+}
+
 
 
