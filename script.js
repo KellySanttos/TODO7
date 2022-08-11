@@ -17,5 +17,10 @@ function perguntar(pergunta) {
   })
 }
 
+while(!itens.includes('sair')){
+  let entrada = await perguntar(chalk.blue('Insira um item: '));
+  itens.push(entrada.toLowerCase())
+};
+
 
 
